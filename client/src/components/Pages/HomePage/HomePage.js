@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import "./HomePage.css";
-// import VideoPlayback from '../../Media/Videos/VideoPlayback.js';
+import React from 'react';
 
+const Home = () =>{
 
-class HomePage extends Component {
-    render() {
-        return (
-      
-            <div className="homePage">Home Page</div>
-        );
-    }}
-export default HomePage;
+    return (
+        <div>
+            <h3>Home:</h3>
+        </div>
+    );
+
+}
+
+export default Home;

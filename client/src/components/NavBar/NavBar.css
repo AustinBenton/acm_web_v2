@@ -1,43 +1,25 @@
-.rightSide{
-    align-self: center !important;
-    text-align: right;
+.navgrid {
+    display: grid;
+    padding: 10px;
 }
-
-.navacm{
-
-    background-color: #2c2c2c;
-    min-height: 11%;
-    font-size: large;
-
+.navgriditems{
+    border: 25px;
+    padding: 20px;
 }
-
-.navacmbg{
-    background-color: transparent;
-    /* padding: 2rem; */
-    z-index: 100 ;
+.navbar {
+    background-color: green;
+    border-radius: 5px;
     width: 100%;
-    border: 0px;
-    box-shadow: none;
-    position: fixed;
-    overflow: visible;
-    box-shadow: 0px;
-    box-sizing: border-box;
-
-} 
-
-.nav-link{
-    color: azure !important;
+    height: 50px;
 }
-
-.navDisc {
-    margin-right: 2rem;
+.navbarUL{
+    list-style-type: none;
 }
-
-.nav-link:hover{
-    color: rgb(4, 251, 251) !important;
+.navbarLI{
+    display: inline;
 }
-
-.acm{
-    cursor: pointer;
-    color: black;
+.pagelink {
+    font:bold 22px Arial;
+    text-decoration: none;
+    
 }

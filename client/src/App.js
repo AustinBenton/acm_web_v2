@@ -1,27 +1,23 @@
-import React from 'react'
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
-import HomePage from './components/Pages/HomePage/HomePage.js';
-import Events from './components/Pages/EventsPage/EventsPage.js';
-import NavBar from './components/NavBar/NavBar.js';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import NavBar from './components/NavBar/NavBar.js'
+import Events from './components/Pages/EventsPage/EventsPage.js'
+import Home from "./components/Pages/HomePage/HomePage.js"
+import Login from "./components/Pages/LoginPage/LoginPage.js"
+import Officers from "./components/Pages/OfficersPage/OfficersPage.js"
 
-const App = () => {
-    return (
-        <div>
-            <BrowserRouter>
-            <NavBar/>
+function App() {
+    return(
+        <Router>
+            <NavBar />
             <Routes>
-                <Route path="/" element={HomePage} />
-                <Route path='events' element={Events} />
+                <Route path='/' exact element={<Home/>} />
+                <Route path='/EventsPage' element={<Events/>} />
+                <Route path='/LoginPage' element = {<Login/>} />
+                <Route path='/OfficersPage' element = {<Officers/>} />
             </Routes>
+        </Router>
+    );
 
-            </BrowserRouter>
-
-        </div>
-    )
 }
-export default App;
+
+export default App
