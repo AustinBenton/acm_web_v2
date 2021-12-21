@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Events = () =>{
+const Officers = () =>{
 
     return (
         <div>
-            <h3>Events:</h3>
+            <h3>Officers:</h3>
         </div>
     );
 
 }
 
-export default Events;
+export default Officers;

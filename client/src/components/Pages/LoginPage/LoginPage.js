@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Events = () =>{
+const Login = () =>{
 
     return (
         <div>
-            <h3>Events:</h3>
+            <h3>Login:</h3>
         </div>
     );
 
 }
 
-export default Events;
+export default Login;
