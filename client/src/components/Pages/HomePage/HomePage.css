@@ -1,0 +1,51 @@
+.homePage{
+    margin-top: 5%;
+    margin-bottom: 4rem;
+    z-index: 98;
+    height: fit-content;
+    width: 100vw;
+}    
+
+
+
+.paraHome {
+    height: 25rem;
+    width: 100%;
+}
+
+img {
+    object-fit: fill;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+
+.CaroItem{
+    width: 100% !important;
+}
+
+.discord-thing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50em;
+    opacity: 1;
+    opacity: var(--headerOpacity);
+    transform: scale(var(--headerScale));
+    
+}
+
+.discord-thing > {
+    display:block;
+    /* margin:5em 12% auto auto; */
+    /* padding-top: 11%; */
+    
+}
+
+.deta{
+    border-radius: .75em;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 2em;
+    font-family: Arial, Helvetica, Arial, sans-serif;
+}
