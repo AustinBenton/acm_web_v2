@@ -4,19 +4,19 @@ import "./NavBar.css"
 
 const NavBar = () =>{
     return(
-        <div class = "navbar">
-            <ul class = "navbarUL">
-                <li class = "navbarLI">
-                    <Link class = "pagelink" to = "/">Home</Link>
+        <div>
+            <ul className = "wrapper">
+                <li className = "linkformat">
+                    <Link to = "/">Home</Link>
                 </li>
-                <li class = "navbarLI">
-                    <Link class = "pagelink" to = "/LoginPage">Login</Link>
+                <li className = "linkformat">
+                    <Link  to = "/LoginPage">Login</Link>
                 </li>
-                <li class = "navbarLI">
-                    <Link class = "pagelink" to = "/EventsPage">Events</Link>
+                <li className = "linkformat">
+                    <Link to = "/EventsPage">Events</Link>
                 </li>
-                <li class = "navbarLI">
-                    <Link class = "pagelink" to = "/OfficersPage">Officers</Link>
+                <li className = "linkformat">
+                    <Link to = "/OfficersPage">Officers</Link>
                 </li>
             </ul>
         </div>
