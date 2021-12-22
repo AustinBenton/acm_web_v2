@@ -4,6 +4,7 @@ import Events from './components/Pages/EventsPage/EventsPage.js'
 import Home from "./components/Pages/HomePage/HomePage.js"
 import Login from "./components/Pages/LoginPage/LoginPage.js"
 import Officers from "./components/Pages/OfficersPage/OfficersPage.js"
+import AdminPage from "./components/AdminPortal/AdminPage.js";
 
 function App() {
     return(
@@ -14,6 +15,7 @@ function App() {
                 <Route path='/EventsPage' element={<Events/>} />
                 <Route path='/LoginPage' element = {<Login/>} />
                 <Route path='/OfficersPage' element = {<Officers/>} />
+                <Route path='/AdminPage' element={<AdminPage/>}/>
             </Routes>
         </Router>
     );
