@@ -24,35 +24,29 @@ const NavBar = () => {
     return (
         <div>
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">home</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                            <a href = "/"><NavLink><img className = "logoformat" src = "./logo.png"/></NavLink></a>
+                        </NavItem>
+                    </Nav>
+                    <Nav className="mr-auto" navbar>
+                        <NavItem>
+                            <NavLink href="/EventsPage">Events</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <NavLink href="/OfficersPage">Officers</NavLink>
                         </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Options
-                            </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem>
-                                    Option 1
-                                </DropdownItem>
-                                <DropdownItem>
-                                    Option 2
-                                </DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>
-                                    Reset
-                                </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
+                        <NavItem>
+                            <NavLink href="/AdminPage">Admin Portal</NavLink>
+                        </NavItem>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
+                    <Nav className="ms-auto" navbar>
+                        <NavItem>
+                            <NavLink href="/LoginPage">Sign In</NavLink>
+                        </NavItem>
+                    </Nav>
                 </Collapse>
             </Navbar>
         </div>
